@@ -38,7 +38,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     try {
       var p=document.getElementById('password').value;
       var d=CryptoJS.AES.decrypt(DEST, SALT + p).toString(CryptoJS.enc.Utf8);
-      if (d && d.match/^http/) {
+      if (d && d.match(/^http/)) {
         window.location.href = d;
       }
     } catch (e) {
