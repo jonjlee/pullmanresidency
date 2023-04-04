@@ -29,7 +29,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 </script>
 <script>
   var SALT = "lmem'd54549(3q73";
-  var DEST = "U2FsdGVkX19ZYa8YbTrMj4imSb7TD/WX+YFUeCJbJfFVxdypWpIyzwCziHSvdyomXkKCYX/zX9HYfz8nl/g3lfRuAvoL/Ls2Xy56Je83t+db9xJA0pP1i1mlb6TN+or84qfY82u4D1isxtpu8jyhMA=="
+  var DEST = "U2FsdGVkX1/XTKjiB3WhCCgcbkF99nPqJjG3mmSvvk3IMnr943zpeAXCSoJVYyt7A8U3fCeODewSKyg81FU+SmTOm6OuoZrbBSqk7qfWh9QmODlrznnSXwVUEqMEraW6hFpyEVlpHCJUgtULQ0NwYA=="
   function encrypt(s, pwd) {
     window.s = CryptoJS.AES.encrypt(s, SALT+pwd).toString()
     return window.s;
